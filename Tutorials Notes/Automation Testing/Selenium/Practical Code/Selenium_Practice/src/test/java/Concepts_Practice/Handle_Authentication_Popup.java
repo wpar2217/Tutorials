@@ -1,13 +1,13 @@
-package browser_Launching;
+package Concepts_Practice;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Chrome_Launching {
+public class Handle_Authentication_Popup {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.apsrtconline.in/oprs-web/");
 		Thread.sleep(2000);
-		driver.close();
+		driver.get("https://admin:admin@the-internet.herokuapp.com/basic_auth");
+		//Passing the username and password in the URL
 	}
 }
